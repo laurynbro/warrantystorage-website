@@ -120,7 +120,7 @@ app.get("/api/plan", function (req, res){
 			_PackageInfo(req.headers["token"], this);
 		},
 		function (package){
-			return res.send({package: package});
+			return res.send({plan: package});
 		}
 	)
 });
